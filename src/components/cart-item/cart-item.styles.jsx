@@ -9,8 +9,9 @@ export const CartItemContainer = styled.div`
   img {
     width: 30%;
   }
+`;
 
-  .item-details {
+export const ItemDetails = styled.div`
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -18,8 +19,7 @@ export const CartItemContainer = styled.div`
     justify-content: center;
     padding: 10px 20px;
 
-    .name {
+    span {
       font-size: 16px;
     }
-  }
 `;

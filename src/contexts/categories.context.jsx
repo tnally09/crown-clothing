@@ -21,14 +21,13 @@ export const CategoriesProvider = ({children}) => {
         const getCategoriesMap = async () => {
             try {
                 const categoryMap = await getCategoriesAndDocuments();
-                console.log(categoryMap);
                 setCategoriesMap(categoryMap);
             } catch(error) {
                 console.log(error);
             }
         }
         getCategoriesMap();
-    })
+    }, [])
 
     const value = { categoriesMap };
     return(
