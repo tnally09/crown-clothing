@@ -66,7 +66,7 @@ export const setCartItems = withMatcher((cartItems: CartItem[]): SetCartItems =>
 
 export const addItemToCart = (
     cartItems: CartItem[],
-    productToAdd: CartItem
+    productToAdd: CategoryItem
     ) => {
         const newCartItems = addCartItem(cartItems, productToAdd);
         return setCartItems(newCartItems);
